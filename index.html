@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Socket.io POC</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="sendMessage()">Send message</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script>
+    var socket = io('http://localhost:3000', { transports: ['websocket', 'polling', 'flashsocket'] });
+
+    function sendMessage() {
+        socket.emit('channel_name', 'This is a personal chat.');
+    }
+
+    socket.on('channel_name', function(msg) {
+        console.log('message: ', msg);
+    });
+    </script>
+</body>
+
+</html>

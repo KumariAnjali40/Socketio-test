@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-socket-io",
+  "version": "1.0.0",
+  "description": "A poc for socket.io communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharrajs/nodejs-socket-io.git"
+  },
+  "author": "sridharrajs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sridharrajs/nodejs-socket-io/issues"
+  },
+  "homepage": "https://github.com/sridharrajs/nodejs-socket-io#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4"
+  }
+}
